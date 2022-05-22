@@ -2,37 +2,48 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.IdCard {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  border: 1px solid black;
+  margin: 1em;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.IdCard img {
+  width: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.IdCard p {
+  text-align: justify;
+  padding: 0;
+  margin: 1em;
+}
+
+.Greetings {
+  border: 1px solid black;
+  margin: 1em;
+  padding-left: 1em;
+  font-size: large;
+  text-align: left;
+  font-weight: 600;
+}
+
+.random-num {
+  border: 1px solid black;
+  margin: 1em;
+  padding-left: 1em;
+  font-size: large;
+  text-align: left;
+  font-weight: 600;
+}
+
+.box-color {
+  border: 1px solid black;
+  margin: 1em;
+  font-size: large;
+  padding: 70px 0;
+  text-align: center;
+  font-weight: 600;
+  border: 1px solid;
 }
