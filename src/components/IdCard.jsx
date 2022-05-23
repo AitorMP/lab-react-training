@@ -5,7 +5,7 @@ const IdCard = (props) => {
     <div className="IdCard">
       <img src={props.picture} alt="profilePicture" />
 
-      <div>
+      <div id="text">
         <p>
           <strong>First Name:</strong> {firstName}
         </p>

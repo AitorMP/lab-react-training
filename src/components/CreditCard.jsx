@@ -12,6 +12,30 @@ const CreditCard = (props) => {
     color,
   } = props;
 
-  return <div></div>;
+  const cardStyle = {
+    backgroundColor: `${bgColor}`,
+    color: `${color}`,
+  };
+
+  let secretNum = number.substring(12, 16);
+
+  return (
+    <div className="cards">
+      <div className="creditCard" style={cardStyle}>
+        <div className="type">
+          <p>{type}</p>
+        </div>
+        <div className="secretNum">
+          <p>**** **** **** {secretNum}</p>
+        </div>
+        <div>
+          <p>
+            Expires {expirationMonth}/{expirationYear} {bank}
+          </p>
+          <p>{owner}</p>
+        </div>
+      </div>
+    </div>
+  );
 };
 export default CreditCard;

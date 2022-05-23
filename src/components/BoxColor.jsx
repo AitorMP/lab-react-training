@@ -2,7 +2,7 @@ import React from 'react';
 
 const BoxColor = (props) => {
   const { r, g, b } = props;
-  const backgroundColor = `rgb($(r), $(g), $(b))`;
+  const backgroundColor = `rgb(${r}, ${g}, ${b})`;
 
   return (
     <div className="box-color" style={{ backgroundColor }}>
